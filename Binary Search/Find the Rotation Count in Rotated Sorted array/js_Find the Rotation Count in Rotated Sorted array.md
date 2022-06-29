@@ -71,7 +71,7 @@ function findPivot(arr,start,end){
 
 function RotationCount(arr){
   let pivot = findPivot(arr,0,arr.length-1);
-  if(pivot===arr.length-1){ // edge case : if the array is not rotated pivot will be the last elemet index of that array. In this case it rotated 0 time so here we return 0.
+  if(pivot===arr.length-1){ //edge case : if the array is not rotated/maximum rotated, pivot will be equal to the last element index of that array. In this case it rotated 0 time so here we return 0.
     return 0;
   }else{
      return pivot+1;
